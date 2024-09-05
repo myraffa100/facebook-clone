@@ -1,0 +1,260 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #F5F6F7;
+  height: 100vh;
+}
+.container-fluid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 0;
+  padding: 30px;
+  
+}
+
+.captionContent {
+  margin-right:50px;
+  
+}
+.captionContent h1 {
+  font-size: 50px;
+  color: #1877F2;
+  margin-bottom: -20px;
+}
+
+.captionContent p {
+  font-size: 24px;
+
+  
+}
+.container {
+  /* width: 100%; */
+  margin: 10px;
+  border: none;
+}
+
+.formLogin {
+  max-width: 100%;
+  width: 400px;
+  height: auto;
+  background-color: #ffff;
+  padding: 30px;
+  border-radius: 8px;
+  box-sizing: border-box;
+  box-shadow: 0.1px 2px 2px grey;
+  border: none;
+}
+
+.formLogin input {
+  width: 100%;
+  padding: 18px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+.formLogin input:focus {
+  border-color: #66afe9;
+  outline: none;
+  box-shadow: 0 0 5px rgba(102,175,233, 0.5);
+}
+
+.btn-primary {
+  width: 100%;
+  background-color: #1877F2;
+  color: #ffff;
+  padding: 10px;
+  margin: 10px 0;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: #2e86fa;
+}
+
+.formLogin a {
+  font-size: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.formLogin a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  border: 0;
+  height: 0.5px;
+  margin: 20px 0;
+  background-color: #706c6c;
+  box-shadow: 0 4px 6px -2px rgba(0, 0, 0, 0.3);
+}
+
+.btn-secondary {
+  width: 150px;
+  padding: 15px;
+  margin: auto;
+  margin-top: 25px;
+  background-color: #00A400;
+  color: #ffff;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-secondary:hover {
+  background-color: #51CE70;
+}
+#tagName {
+  text-align: center;
+  font-size: 14px;
+}
+span {
+  font-size: 14px;
+  font-weight: bold;
+}
+/* Responsive devices */
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 599px) {
+  #content {
+    width: 90%;
+    margin: 20px;
+    padding: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;   
+ 
+  }
+
+  .captionContent h1 {
+    font-size: 60px;
+  }
+
+  .captionContent p {
+    font-size: 23px;
+  }
+
+  .formLogin input {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .btn-primary {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .btn-secondary {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+  #content {
+    width: 85%;
+    margin: 30px;
+    padding: 20px;
+  }
+
+  .captionContent h1 {
+    font-size: 36px;
+  }
+
+  .captionContent p {
+    font-size: 16px;
+  }
+
+  .formLogin input {
+  
+    padding: 14px;
+    font-size: 15px;
+  }
+
+  .btn-primary {
+    font-size: 17px;
+    padding: 9px;
+  }
+
+  .btn-secondary {
+    width: 80%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  #content {
+    width: 75%;
+    margin: 40px;
+    padding: 25px;
+  }
+
+  .captionContent h1 {
+    font-size: 42px;
+  }
+
+  .captionContent p {
+    font-size: 18px;
+  }
+
+  .formLogin input {
+    padding: 16px;
+    font-size: 16px;
+  }
+
+  .btn-primary {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .btn-secondary {
+    width: 70%;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  #content {
+    width: 70%;
+    margin: 50px;
+    padding: 30px;
+  }
+
+ 
+  .formLogin input {
+    padding: 18px;
+    font-size: 16px;
+  }
+
+  .btn-primary {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .btn-secondary {
+    width: 150px;
+  }
+}
