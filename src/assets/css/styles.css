@@ -144,16 +144,26 @@ span {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;   
- 
+  }
+
+  .captionContent {
+    margin-bottom: 20px;
+    margin-right: 0;
   }
 
   .captionContent h1 {
     font-size: 60px;
+    text-align: center;
   }
 
   .captionContent p {
-    font-size: 23px;
+    font-size: 22px;
+    text-align: center;
+  }
+
+  .formLogin {
+    width: 100%;
+    padding: 20px;
   }
 
   .formLogin input {
@@ -170,68 +180,9 @@ span {
     width: 100%;
     padding: 10px;
   }
-}
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) and (max-width: 767px) {
-  #content {
-    width: 85%;
-    margin: 30px;
-    padding: 20px;
-  }
-
-  .captionContent h1 {
-    font-size: 36px;
-  }
-
-  .captionContent p {
-    font-size: 16px;
-  }
-
-  .formLogin input {
-  
-    padding: 14px;
-    font-size: 15px;
-  }
-
-  .btn-primary {
-    font-size: 17px;
-    padding: 9px;
-  }
-
-  .btn-secondary {
-    width: 80%;
-  }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-  #content {
-    width: 75%;
-    margin: 40px;
-    padding: 25px;
-  }
-
-  .captionContent h1 {
-    font-size: 42px;
-  }
-
-  .captionContent p {
-    font-size: 18px;
-  }
-
-  .formLogin input {
-    padding: 16px;
-    font-size: 16px;
-  }
-
-  .btn-primary {
-    font-size: 18px;
-    padding: 10px;
-  }
-
-  .btn-secondary {
-    width: 70%;
+  hr {
+    margin: 15px 0;
   }
 }
 
