@@ -107,10 +107,11 @@ hr {
 }
 
 .btn-secondary {
-  width: 150px;
-  padding: 15px;
+  width: 100%px;
+  max-width: 400px;
+  padding: 13px;
   margin: auto;
-  margin-top: 25px;
+  /* margin-top: 25px; */
   background-color: #00A400;
   color: #ffff;
   border: none;
@@ -133,58 +134,73 @@ span {
   font-size: 14px;
   font-weight: bold;
 }
-/* Responsive devices */
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 599px) {
-  #content {
-    width: 90%;
-    margin: 20px;
-    padding: 15px;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .captionContent {
-    margin-bottom: 20px;
-    margin-right: 0;
-  }
-
-  .captionContent h1 {
-    font-size: 60px;
-    text-align: center;
-  }
-
-  .captionContent p {
-    font-size: 22px;
-    text-align: center;
-  }
-
-  .formLogin {
-    width: 100%;
-    padding: 20px;
-  }
-
-  .formLogin input {
-    padding: 12px;
-    font-size: 14px;
-  }
-
-  .btn-primary {
-    font-size: 16px;
-    padding: 8px;
-  }
-
-  .btn-secondary {
-    width: 50%;
-    padding: 10px;
-  }
-
-  hr {
-    margin: 15px 0;
-  }
+/* daftar */
+#daftarBody {
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  background-color: #ccc;
+  height: 100vh;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  text-align: center; 
 }
+
+#formDaftar {
+  background-color: #fff;
+  width: 100%;
+  max-width: 400px;
+  border: none;
+  margin: auto;
+  padding: 20px; 
+  border-radius: 5px;
+  box-shadow: 1px 1px 10px 1px #ccc; 
+}
+
+.inputName
+input, select, button {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 15px;
+}
+
+#formDaftar h1 {
+  margin-bottom: 10px;
+}
+#formDaftar p {
+  font-size: 15px;
+  color: grey;
+}
+.checkbox-container input {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-daftar {
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #26b126;
+  color: #ffff;
+  width: 100%;
+  padding: 10px;
+  max-width: 170px;
+  margin: auto;
+  display: block;
+}
+
+.btn-daftar:hover {
+  background-color: #439e43;
+}
+
+a {
+  text-decoration: none;
+}
+
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Daftar</title>
+    <!-- css -->
+    <link rel="stylesheet" href="../assets/css/styles.css" />
+  </head>
+  <body class="daftarBody">
+    <div id="formDaftar">
+      <form action="">
+        <a href="/facebook-clone/index.html" style="display: flex; justify-content: flex-end; font-weight: bold; font-size: 24px; text-decoration: none; color: grey;">X</a>
+        <h1>Daftar</h1>
+        <p>Ini cepat dan mudah</p>
+        <div class="inputName">
+          <div style="display: flex; gap: 5px">
+            <input type="text" placeholder="Nama Depan" required />
+            <input type="text" placeholder="Nama Belakang" required />
+          </div>
+
+          <input type="text" placeholder="Nomor seluler atau email" required />
+          <input type="password" placeholder="Kata sandi baru" required />
+
+          <!-- daftar tanggal -->
+          <label for="tanggalLahir">Tanggal Lahir</label>
+          <div style="display: flex; gap: 5px; margin-top: 10px" class="tanggalLahir">
+            <select name="tanggalLahir" id="tanggalLahir">
+            </select>
+
+            <select name="bulanLahir" id="bulanLahir">
+            </select>
+
+            <select name="tahunLahir" id="tahunLahir">
+            </select>
+          </div>
+        </div>
+
+        <label>Jenis Kelamin</label>
+        <div style="display: flex; gap: 5px; margin-top: 10px">
+          <div style="border: 1px solid #cccccc; padding: 10px">
+            <label for=""> <input type="radio" name="gender" value="Perempuan" />Perempuan</label>
+          </div>
+          <div style="border: 1px solid #cccccc; padding: 10px">
+            <label for=""> <input type="radio" name="gender" value="Laki-laki" />Laki-laki</label>
+          </div>
+          <div style="border: 1px solid #cccccc; padding: 10px">
+            <label for=""> <input type="radio" name="gender" value="Khusus" />Khusus</label>
+          </div>
+        </div>
+        <p>Orang yang menggunakan layanan kami dapat mengunggah informasi kontak Anda ke Facebook. <a href="">Pelajari selengkapnya</a></p>
+        <p>Dengan mengklik Daftar, Anda <a href="">menyetujui Ketentuan, Kebijakan Privasi, dan Kebijakan Cookie kami.</a> Anda akan menerima Notifikasi SMS dari kami dan bisa berhenti kapan saja.</p>
+        <button class="btn-daftar">Daftar</button>
+      </form>
+    </div>
+
+    <!-- js -->
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>
