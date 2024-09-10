@@ -202,26 +202,31 @@ a {
 }
 
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+/* Tablet: 768px hingga 991px */
+@media only screen and (max-width: 991px) {
+  .formLogin {
+    width: 80%; /* Sesuaikan ukuran */
+  }
+
+  .captionContent h1 {
+    font-size: 40px; /* Kurangi ukuran font */
+  }
+}
+
+/* Mobile: di bawah 768px */
+@media only screen and (max-width: 767px) {
   #content {
-    width: 70%;
-    margin: 50px;
-    padding: 30px;
+    flex-direction: column;
+    align-items: center;
   }
 
- 
-  .formLogin input {
-    padding: 18px;
-    font-size: 16px;
+  .formLogin {
+    width: 100%;
+    padding: 20px; /* Sesuaikan padding */
   }
 
-  .btn-primary {
-    font-size: 18px;
-    padding: 10px;
-  }
-
-  .btn-secondary {
-    width: 150px;
+  .captionContent {
+    margin-bottom: 20px;
+    text-align: center;
   }
 }
